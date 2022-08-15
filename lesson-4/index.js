@@ -58,7 +58,7 @@ function isReport(str) {
 }
 isReport('это строка')
 
-4
+//4
 // function pow(x, n) {
 //     let result = x;
   
@@ -79,7 +79,7 @@ isReport('это строка')
 
 // }   
 // pow()
-// 4    !!!!!!!!!!!!!!! возведение в степень 
+// 4    !!!!!!!!!!!!!!! возведение в степень  
 function pow(x, n) {
     let result = x;
     for (let i = 1; i < n; i++) {
@@ -93,7 +93,8 @@ pow(5, 4)
 
 
 
-// 5 удалить пробел из строки 
+// 5 удалить пробел из строки   Написать функцию, которая принимает строку, как аргумент, и возвращает новую строку, но уже без пробелов.
+
 // function probel(input) {
 //     return console.log(input.split(' ').join(''));
 // }
@@ -116,7 +117,8 @@ deleteSpace('No Space')
 // }
 // deleteSpace('Hello Worls')
 
-// 6
+// 6  Написать функцию, которая принимает строку, как аргумент, и возвращает новую ее зеркальную версию.
+
 function isReverce(string) {
     return string.split('').reverse().join('');
 }
@@ -133,7 +135,8 @@ function delRev(s = '') {
 delRev('helHtllo woeld    i amlo')
 
 
-// 7 
+// 7  // 7*. Написать функцию, которая принимает строку и трансформирует ее в camelCase
+
 function cammel(text) {
     let cam = text.toUpperCase()
     console.log(cam);
