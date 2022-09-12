@@ -1,0 +1,31 @@
+h2 {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.svetofor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cirlce-1, .cirlce-2, .cirlce-3{
+    width: 88px;
+    height: 88px;
+    background: gray;
+    border-radius: 50%;
+    transition: background .5s;
+}
+
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.orange {
+    background: orange;
+}
