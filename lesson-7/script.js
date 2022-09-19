@@ -157,15 +157,80 @@ console.log(element.show())
 // Замыкания
 
 
+// классы 
+function Person (name, age, status) {
+    this.name = name
+    this.age = age
+    this.status = status
+    this.getYear = () => {
+        return 2022 - this.age 
+    }
+}
 
 
+const me = new Person('Denis', 25, 'online')
+console.log(me.getYear());
+
+class Per {
+    constructor(name, age, hasCar) {
+        this.name = name
+        this.age = age
+        this.hasCar = hasCar
+    }
+
+    sayHi() {
+        return `Hi i'am ${this.name}`
+    }
+}
+
+const person = new Per('Denis', 25, false)
+console.log(person.sayHi());
 
 
+class Animal {
+    constructor(options) {
+        this.name =options.name
+        this.age = options.age
+        this.hasTail = options.hasTail
+    }
 
+    voice() {
+        console.log('i am animal');
+    }
+}
 
+const animal = new Animal({
+    name: 'Animal',
+    age: 7,
+    hasTail: true
+})
 
+console.log(animal);
 
+class Cat extends Animal {
+    constructor(options) {
+        super(options)
+        this.color = options.color
+    }
 
+    voice() {
+        super.voice()
+        console.log('i am cat');
+    }
 
+    get ageInfo() {
+        return this.age * 7
+    }
+    set ageInfo(newAge) {
+        this.age = newAge
+    }
+    
+}
+const cat = new Cat({
+    name: 'Cat',
+    age: 7,
+    hasTail: true,
+    color: 'black',
 
-
+})
+console.log(cat);
